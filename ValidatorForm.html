@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Validate by direct input</h1>
+    <form action="#" method="post">
+        <FIELDset>
+            <legend>Validate by direct input</legend>
+            <label>Enter the Markup to validate:</label> <br>
+            <textarea name="markup" id="markup" cols="40" rows="10"></textarea> <br>
+            <input type="radio" name="validate" id="validatefull" value="Validate Full Document" checked>
+            <label for="validatefull">Validate Full Document</label> <br>
+            <label>Use Doctype: </label>
+            <select name="doctype" id="doctype">
+                <option>(detect automatically)</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select> <br>
+            <input type="radio" name="validate" id="validatehtml" value="Validate HTML fragment">
+            <label for="validatehtml">Validate HTML fragment</label> <br>
+            <label>Use Doctype: </label>
+            <input type="radio" name="radio" id="radio1" value="HTML 4.01" checked>
+            <label for="radio1">HTML 4.01</label>
+            <input type="radio" name="radio" id="radio2" value="XHTML 1.0">
+            <label for="radio2">XHTML 1.0</label>
+        </FIELDset>
+        <fieldset>
+            <legend>Options</legend>
+            <input type="radio" name="mensajes" id="mensajes1" value="List Messages Sequentially" checked>
+            <label for="mensajes1">HTML 4.01</label>
+            <input type="radio" name="mensajes" id="mensajes2" value="Group Error Messages by Type">
+            <label for="mensajes2">Group Error Messages by Type</label> <br>
+            <input type="checkbox" name="check" value="Show Source" id="check1">
+            <label for="check1">Show Source</label>
+            <input type="checkbox" name="check" value="Clean Up Markup with HTML-Tidy" id="check2">
+            <label for="check2">Clean Up Markup with HTML-Tidy</label> <br>
+        </fieldset>
+        <input type="submit" name="btncheck" value="Check">
+    </form>
+</body>
+</html>
